@@ -24,7 +24,6 @@ runs:
         key: ${{ runner.os }}-solana-v${{ inputs.version }}
 
     - name: Install Solana
-      if: inputs.cache != 'true' || steps.cache.outputs.cache-hit != 'true'
       run: |
         sh -c "$(curl -sSfL https://release.solana.com/v${{ inputs.version }}/install)"
       shell: bash
