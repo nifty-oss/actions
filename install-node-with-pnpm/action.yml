@@ -1,0 +1,34 @@
+name: Install Node.js with PNPM
+
+inputs:
+  version:
+    description: The Node.js version to install
+    required: true
+    default: "18.x"
+  dependencies:
+    description: whether to install dependencies on the root folder
+    required: true
+    default: "false"
+  cache:
+    description: Whether installed dependencies should be cached
+    required: true
+    default: "true"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.version }}
+        cache: "pnpm"
+
+    - name: Install Node.js dependencies
+      if: inputs.dependencies == 'true'
+      uses: nifty-oss/actions/install-node-dependencies@v1
+      with:
+        cache: ${{ inputs.cache }}
+        key: "node"
