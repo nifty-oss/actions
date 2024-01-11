@@ -30,6 +30,7 @@ runs:
 
     - name: Set Active Solana Version
       run: |
+        pwd
         ls -la
         rm -f "~/.local/share/solana/install/active_release"
         ln -s "~/.local/share/solana/install/releases/${{ inputs.version }}/solana-release" "$HOME/.local/share/solana/install/active_release"
