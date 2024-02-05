@@ -37,15 +37,12 @@ runs:
 
     - name: Add Solana bin to Path
       run: |
-        echo "HOME: ${HOME}"
-        echo "PATH: $PATH"
-        echo "PWD: $PWD"
-        which solana
-        ls -la $HOME
         echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
       shell: bash
 
     - name: Verify Solana install
       run: |
+        which solana
+        ls -la $HOME
         solana --version
       shell: bash
