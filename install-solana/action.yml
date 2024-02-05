@@ -18,7 +18,7 @@ runs:
       if: inputs.cache == 'true'
       uses: buildjet/cache@v3
       with:
-        path: $HOME/.local/share/solana/install/releases/${{ inputs.version }}
+        path: $HOME/.local/share/solana/install
         key: ${{ runner.os }}-solana-v${{ inputs.version }}
 
     - name: Install Solana
@@ -40,5 +40,6 @@ runs:
 
     - name: Verify Solana install
       run: |
+        ls -la $HOME/.local/share/solana
         solana --version
       shell: bash
