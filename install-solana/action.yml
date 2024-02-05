@@ -40,7 +40,8 @@ runs:
         echo "HOME: ${HOME}"
         echo "PATH: $PATH"
         echo "PWD: $PWD"
-        pwd
+        which solana
+        ls -la $HOME
         echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
       shell: bash
 
