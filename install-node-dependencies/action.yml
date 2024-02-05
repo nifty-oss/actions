@@ -25,7 +25,7 @@ runs:
       if: inputs.cache == 'true'
       uses: buildjet/cache@v3
       with:
-        path: ${{ inputs.folder }}/js/node_modules/
+        path: ${{ inputs.folder }}/node_modules/
         key: ${{ runner.os }}-${{ inputs.key }}-${{ hashFiles(format('{0}/pnpm-lock.yaml, {0}/package-lock.json, {0}/yarn.lock', inputs.folder)) }}
         restore-keys: |
           ${{ runner.os }}-${{ inputs.key }}
