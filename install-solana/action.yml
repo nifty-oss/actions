@@ -16,7 +16,7 @@ runs:
     - name: Cache Solana
       id: cache
       if: inputs.cache == 'true'
-      uses: buildjet/cache@v3
+      uses: buildjet/cache@v4
       with:
         path: ~/.local/share/solana/install/releases/${{ inputs.version }}
         key: ${{ runner.os }}-solana-v${{ inputs.version }}

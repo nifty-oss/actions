@@ -16,7 +16,7 @@ runs:
     - name: Cache cargo-release
       id: cache
       if: inputs.cache == 'true'
-      uses: buildjet/cache@v3
+      uses: buildjet/cache@v4
       with:
         path: |
           ~/.cargo/bin/cargo-release

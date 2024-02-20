@@ -14,7 +14,7 @@ runs:
   using: "composite"
   steps:
     - name: Cache all crates dependencies
-      uses: buildjet/cache@v3
+      uses: buildjet/cache@v4
       with:
         path: |
           ~/.cargo/bin/

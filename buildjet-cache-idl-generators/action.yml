@@ -14,7 +14,7 @@ runs:
   using: "composite"
   steps:
     - name: Cache IDL generators
-      uses: buildjet/cache@v3
+      uses: buildjet/cache@v4
       with:
         path: ./.crates/
         key: ${{ runner.os }}-${{ inputs.key }}-${{ hashFiles('**/Cargo.lock') }}
