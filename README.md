@@ -1,4 +1,6 @@
-# Actions
+<p>
+    <img width="200" alt="Stevia" src="https://github.com/nifty-oss/actions/assets/729235/543f1db0-7251-4c68-a538-2c88145320dd" />
+</p>
 
 A set of useful GitHub actions for Solana development and BuildJet workers. The actions are mostly derived from [Metaplex Actions](https://github.com/metaplex-foundation/actions) and [action-rs](https://github.com/actions-rs).
 
