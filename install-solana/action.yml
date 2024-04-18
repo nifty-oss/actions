@@ -19,7 +19,7 @@ runs:
       uses: buildjet/cache@v4
       with:
         path: ~/.local/share/solana/install/releases/${{ inputs.version }}
-        key: ${{ runner.os }}-solana-v${{ inputs.version }}
+        key: ${{ runner.os }}-${{ runner.arch }}-solana-v${{ inputs.version }}
 
     - name: Install Solana
       if: inputs.cache != 'true' || steps.cache.outputs.cache-hit != 'true'
