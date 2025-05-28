@@ -1,4 +1,5 @@
 name: Install Node.js with PNPM
+description: Install Node.js with PNPM and optionally install dependencies
 
 inputs:
   version:

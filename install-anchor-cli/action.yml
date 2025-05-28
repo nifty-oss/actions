@@ -1,10 +1,11 @@
 name: Install Anchor CLI
+description: Install Anchor CLI toolchain and components
 
 inputs:
   version:
     description: The Anchor CLI version to install
     required: true
-    default: "0.29.0"
+    default: "0.31.1"
   cache:
     description: Whether the downloaded Anchor CLI release should be cached
     required: true

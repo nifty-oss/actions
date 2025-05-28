@@ -1,4 +1,5 @@
 name: Cache rust dependencies of multiple crates
+description: Cache rust dependencies of multiple crates for faster builds
 
 inputs:
   folder:

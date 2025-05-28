@@ -1,4 +1,5 @@
 name: Cache rust dependencies of one crate using buildjet
+description: Cache rust dependencies of one crate for faster builds
 
 inputs:
   folder:

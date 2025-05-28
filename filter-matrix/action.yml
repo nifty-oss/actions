@@ -1,4 +1,5 @@
 name: Filter matrix
+description: Filter a matrix based on changed filters from "dorny/paths-filter"
 
 inputs:
   matrix:

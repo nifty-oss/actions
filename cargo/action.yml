@@ -1,6 +1,6 @@
-name: 'rust-cargo'
-description: 'Run cargo command'
-author: 'actions-rs team'
+name: "rust-cargo"
+description: "Run cargo command"
+author: "actions-rs team"
 branding:
   icon: play-circle
   color: black
@@ -16,8 +16,8 @@ inputs:
     required: false
   use-cross:
     description: Use cross instead of cargo
-    default: false
+    default: "false"
 
 runs:
-  using: 'node20'
-  main: 'dist/index.js'
+  using: "node20"
+  main: "dist/index.js"
