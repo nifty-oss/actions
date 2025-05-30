@@ -1,4 +1,5 @@
 name: Cache IDL generators
+description: Cache IDL generators for faster builds
 
 inputs:
   path:

@@ -1,4 +1,5 @@
 name: Start validator
+description: Start a validator using the provided artifacts and configurations
 
 inputs:
   artifacts:

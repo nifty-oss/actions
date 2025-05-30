@@ -1,4 +1,5 @@
 name: Install Node dependencies
+description: Install Node.js dependencies using PNPM
 
 inputs:
   folder:

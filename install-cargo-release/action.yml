@@ -1,4 +1,5 @@
 name: Install cargo-release
+description: Install cargo-release toolchain and components
 
 inputs:
   cache:

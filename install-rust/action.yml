@@ -1,4 +1,5 @@
 name: Install Rust
+description: Install Rust toolchain and components
 
 inputs:
   toolchain:
